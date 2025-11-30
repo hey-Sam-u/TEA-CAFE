@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tik Tok Café — Menu</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="menu.css" />
+  </head>
+  <body class="light">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="brand">
+          <img src="../logo-small.png" alt="" class="logo" />
+          <div class="brand-text">
+            <h1>Tik Tok Café</h1>
+            <p class="tagline">sip • relax • vibe</p>
+          </div>
+        </a>
+        <nav class="nav-desktop">
+          <a href="../index.html">Home</a>
+          <a href="menu.html" class="active">Menu</a>
+          <a href="order.html">Order</a>
+        </nav>
+        <button id="navOpen" class="hamburger"><span></span></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="menu-hero container">
+        <h2>Our Menu</h2>
+        <p class="muted">
+          12 curated items — chai, coffee, breads & snacks. Tap "Add to Order"
+          to start.
+        </p>
+      </section>
+
+      <section class="menu-grid container" id="menuGrid">
+        <!-- cards injected by menu.js -->
+      </section>
+    </main>
+
+    <!-- floating order quick btn -->
+    <button id="quickOrder" class="btn-glow quick-order">
+      <i class="fa-solid fa-bag-shopping"></i> Order (<span id="quickCount"
+        >0</span
+      >)
+    </button>
+
+    <!-- custom popup placeholder -->
+    <div id="customPopup" class="custom-popup" aria-hidden="true">
+      <div class="popup-card">
+        <button class="popup-close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="popup-body" id="popupBody"></div>
+      </div>
+    </div>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

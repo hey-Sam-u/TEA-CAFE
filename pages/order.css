@@ -1,0 +1,147 @@
+/* order.css — order page styles */
+.order-page {
+  padding: 20px;
+}
+.order-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* order item */
+.order-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(0, 0, 0, 0.1)
+  );
+  padding: 10px;
+  border-radius: 12px;
+}
+.order-row .meta {
+  flex: 1;
+}
+.order-row .meta h4 {
+  margin: 0;
+  font-size: 15px;
+}
+.order-row .controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.12);
+  padding: 6px;
+  border-radius: 10px;
+}
+.counter button {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.remove-btn {
+  background: transparent;
+  border: 0;
+  color: #ff6b8a;
+  font-size: 18px;
+}
+
+/* summary */
+.order-summary {
+  background: linear-gradient(180deg, #10080a, #170d0d);
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.order-summary .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+.order-summary input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.03);
+  color: #fff;
+}
+
+/* totals */
+.totals {
+  border-top: 1px dashed rgba(255, 255, 255, 0.03);
+  padding-top: 10px;
+  margin-top: 8px;
+}
+.total {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+/* controls */
+.controls {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+/* payment modal */
+.payment-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+  z-index: 120;
+}
+.payment-modal.show {
+  display: flex;
+}
+.modal-card {
+  background: linear-gradient(180deg, #1b0f10, #12080a);
+  padding: 20px;
+  border-radius: 14px;
+  min-width: 300px;
+  max-width: 420px;
+  position: relative;
+}
+.payment-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.payment-steps .step {
+  opacity: 0.35;
+  transform: translateY(6px);
+  transition: all 0.35s ease;
+}
+.payment-steps .step.active {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 12px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 42, 165, 0.02),
+    rgba(255, 138, 31, 0.02)
+  );
+}

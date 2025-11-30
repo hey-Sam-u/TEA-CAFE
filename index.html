@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tik Tok Café — Home</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="icon" href="assets/icons/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="light">
+    <!-- PREMIUM HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <img src="logo-small.png" alt="Tik Tok Café" class="logo"/>
+          <div class="brand-text">
+            <h1>Tik Tok Café</h1>
+            <p class="tagline">sip • relax • vibe</p>
+          </div>
+        </div>
+
+        <nav class="nav-desktop">
+          <a href="index.html" class="active">Home</a>
+          <a href="pages/menu.html">Menu</a>
+          <a href="pages/order.html">Order</a>
+          <button id="darkToggle" class="icon-btn" aria-label="toggle theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </nav>
+
+        <!-- mobile nav button -->
+        <button id="navOpen" class="hamburger" aria-label="menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <!-- mobile drawer -->
+      <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+        <div class="drawer-top">
+          <div class="brand small">
+            <img src="logo-small.pn" alt="" />
+            <div>
+              <h2>Tik Tok Café</h2>
+              <p class="tagline">sip • relax • vibe</p>
+            </div>
+          </div>
+          <button id="navClose" class="close-drawer" aria-label="close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <nav class="drawer-nav">
+          <a href="index.html">Home</a>
+          <a href="pages/menu.html">Menu</a>
+          <a href="pages/order.html">Order</a>
+        </nav>
+        <div class="drawer-footer">
+          <button id="ctaMenu" class="btn-glow">
+            <i class="fa-solid fa-mug-saucer"></i> View Menu
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <h2 class="eyebrow">Premium Chai & Coffee</h2>
+          <h1 class="hero-title">
+            Tik Tok Café
+            <span
+              class="typewriter"
+              data-text="Warm cups. Neon vibes. Daily smiles."
+            ></span>
+          </h1>
+          <p class="hero-desc">
+            Handcrafted chai, specialty coffees, golden-brown breads, and cozy
+            moments — all in one neon-lit corner.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="pages/menu.html" class="btn-primary btn-glow big-cta"
+              ><i class="fa-solid fa-mug-hot"></i> SEE MENU</a
+            >
+            <a href="pages/order.html" class="btn-outline">Order Now</a>
+          </div>
+
+          <ul class="features">
+            <li><i class="fa-solid fa-peace"></i> Cozy Ambience</li>
+            <li><i class="fa-solid fa-leaf"></i> Fresh Ingredients</li>
+            <li><i class="fa-solid fa-star"></i> Signature Steams</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="cup-wrap">
+            <img
+              src="hero-teacup.png"
+              alt="Teacup"
+              class="hero-cup"
+            />
+            <div class="steam steam-1"></div>
+            <div class="steam steam-2"></div>
+            <div class="steam steam-3"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PARALLAX BANNER -->
+      <section class="parallax">
+        <div class="parallax-inner">
+          <h3>Hand-brewed, heart-served</h3>
+        </div>
+      </section>
+
+      <!-- CARDS PREVIEW -->
+      <section class="preview-cards container">
+        <article class="card">
+          <img src="chai-01.png" alt="Masala Chai" />
+          <h4>Masala Chai</h4>
+          <p class="muted">Spiced, bold — classic.</p>
+        </article>
+        <article class="card">
+          <img src="coffe-01.png" alt="Cold Brew" />
+          <h4>Cold Brew</h4>
+          <p class="muted">Smooth, long-steeped.</p>
+        </article>
+        <article class="card">
+          <img src="bread-01.png" alt="Fresh Bread" />
+          <h4>Buttery Bread</h4>
+          <p class="muted">Golden & flaky.</p>
+        </article>
+      </section>
+
+      <!-- CTA BAR -->
+      <aside class="cta-bar">
+        <div class="container cta-inner">
+          <div>
+            <h4>Ready for your perfect cup?</h4>
+            <p class="muted">Order ahead & skip the queue.</p>
+          </div>
+          <a href="pages/order.html" class="btn-primary btn-glow small-cta"
+            ><i class="fa-solid fa-bag-shopping"></i> Order</a
+          >
+        </div>
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="col">
+          <h5>Tik Tok Café</h5>
+          <p class="muted">Neon vibes • Fresh brews • Cozy corners</p>
+        </div>
+
+        <div class="col">
+          <h5>Quick Links</h5>
+          <nav class="footer-links">
+            <a href="pages/menu.html">Menu</a>
+            <a href="pages/order.html">Order</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+
+        <div class="col right">
+          <h5>Follow</h5>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Tik Tok Café · Designer samir ♥ </p>
+      </div>
+    </footer>
+
+    <!-- CUSTOM POPUP (re-usable) -->
+    <div id="customPopup" class="custom-popup" aria-hidden="true">
+      <div class="popup-card">
+        <button class="popup-close" aria-label="close popup">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="popup-body" id="popupBody"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

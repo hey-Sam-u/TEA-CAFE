@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tik Tok Café — Order</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="order.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="light">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="brand">
+          <img src="../logo-small.png" alt="" class="logo" />
+          <div class="brand-text">
+            <h1>Tik Tok Café</h1>
+            <p class="tagline">sip • relax • vibe</p>
+          </div>
+        </a>
+        <nav class="nav-desktop">
+          <a href="../index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="order.html" class="active">Order</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container order-page">
+      <section class="order-panel">
+        <h2>Your Order</h2>
+        <div id="orderList" class="order-list"></div>
+
+        <div class="order-summary">
+          <div class="row">
+            <label for="tableNo">Table / Pickup Name</label>
+            <input id="tableNo" placeholder="Table 5 or Your name" />
+          </div>
+
+          <div class="row totals">
+            <div>Subtotal</div>
+            <div id="subtotal">₹0</div>
+          </div>
+          <div class="row totals">
+            <div>Tax (5%)</div>
+            <div id="tax">₹0</div>
+          </div>
+          <div class="row totals total">
+            <div>Total</div>
+            <div id="total">₹0</div>
+          </div>
+
+          <div class="controls">
+            <button id="clearOrder" class="btn-outline">Clear</button>
+            <button id="payNow" class="btn-primary btn-glow">Pay Now</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Payment modal -->
+    <div id="paymentModal" class="payment-modal" aria-hidden="true">
+      <div class="modal-card">
+        <button class="popup-close modal-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="payment-steps">
+          <div class="step active" data-step="1">
+            <h3>Initializing</h3>
+            <p>Preparing your secure payment.</p>
+          </div>
+          <div class="step" data-step="2">
+            <h3>Processing</h3>
+            <p>Processing the fake payment (demo).</p>
+          </div>
+          <div class="step" data-step="3">
+            <h3>Success</h3>
+            <p>Payment completed. Order confirmed!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order confirmed popup -->
+    <div id="confirmedPopup" class="custom-popup" aria-hidden="true">
+      <div class="popup-card">
+        <button class="popup-close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="popup-body" id="confirmedBody"></div>
+      </div>
+    </div>
+
+    <script src="order.js"></script>
+  </body>
+</html>
